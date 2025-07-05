@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
 <meta charset="UTF-8">
 <title>管理メニュー</title>
 <link rel= "stylesheet" th:href="@{/css/registShop.css}">
@@ -9,10 +8,12 @@
 	
 	<h2>管理メニュー</h2>
 	
-		<a href="/show-regist-shop">
-		<button type="button" name="show-regist-top-btn" class="btn" >店舗登録</button><br>
-		<a href="/restaurant-list">
+		<a th:href="@{/show-regist-shop}">
+		<button type="button" name="show-regist-top-btn" class="btn" >店舗登録</button>
+		</a><br>
+		<br>
+		<a th:href="@{/restaurant-list}">
 		<button type="button" name="restaurant-list-btn" class="btn">店舗一覧</button>
-
+		</a>
 </body>
 </html>

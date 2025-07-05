@@ -12,6 +12,6 @@ public class Restaurant {
 	private int restaurantId;
 	private String restaurantName;
 	private String catchPhrase;
-	private int review;
+	private int reviewCount;
 
 }
