@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+	font-family: BIZ UDPゴシック;
+	background-color: rgb(255, 128, 64);
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+    color: rgb(128, 64, 0);
+}
+
+h2 {
+	font-size: 28px;
+	background-color: rgb(128, 64, 0);
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/* 通常のボタン */
+.btn {
+	border: 2px solid rgb(128, 64, 0);
+	padding: 4px 20px;
+	font-size: 20px;
+	color: rgb(128, 64, 0);
+	cursor:pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background: rgb(128, 128, 0);
+}
+
+/* コメント入力の幅 */
+input.comment {
+	width: 400px;
+}
+
+.error-msg {
+    color: red;
+}
