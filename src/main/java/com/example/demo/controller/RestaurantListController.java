@@ -24,11 +24,13 @@ public class RestaurantListController {
 	private String restaurantSearch(@ModelAttribute RestaurantSearchForm form, Model model) {
 		
 		List<Restaurant> list = new ArrayList<Restaurant>();
-		list.add(new Restaurant(1 ,"データ１", "キャッチフレーズ1", 0));
-		list.add(new Restaurant(2 ,"データ2", "キャッチフレーズ2", 1));
-		list.add(new Restaurant(3 ,"データ3", "キャッチフレーズ3", 2));
+		list.add(new Restaurant(1 , "データ１", "キャッチフレーズ1", 0));
+		list.add(new Restaurant(2 , "データ2", "キャッチフレーズ2", 1));
+		list.add(new Restaurant(3 , "データ3", "キャッチフレーズ3", 2));
+		
+		
 		
 		model.addAttribute("restaurantList", list);
-		return "restaurantList";
+		return "restaurant-list";
 	}
 }
